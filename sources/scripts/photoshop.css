@@ -1,0 +1,22 @@
+@charset "utf-8";
+/* CSS Document */
+#PShalloween {height:400px; animation: psHalloween 15s infinite;}
+@keyframes psHalloween {
+	0% {content:url(../images/photoshop/PS-Halloween1.jpg);}
+	100% {content:url(../images/photoshop/PS-Halloween2.jpg);}
+}
+
+#PStaxi {width:400px; height:533px; animation: psTaxi 30s infinite;}
+@keyframes psTaxi {
+	0% {content:url(../images/photoshop/psTaxi/pstaxi1.jpg);}
+	10% {content:url(../images/photoshop/psTaxi/pstaxi2.jpg);}
+	20% {content:url(../images/photoshop/psTaxi/pstaxi3.jpg);}
+	30% {content:url(../images/photoshop/psTaxi/pstaxi4.jpg);}
+	40% {content:url(../images/photoshop/psTaxi/pstaxi5.jpg);}
+	50% {content:url(../images/photoshop/psTaxi/pstaxi6.jpg);}
+	60% {content:url(../images/photoshop/psTaxi/pstaxi7.jpg);}
+	70% {content:url(../images/photoshop/psTaxi/pstaxi8.jpg);}
+	80% {content:url(../images/photoshop/psTaxi/pstaxi9.jpg);}
+	90% {content:url(../images/photoshop/psTaxi/pstaxi10.jpg);}
+	100% {content:url(../images/photoshop/psTaxi/pstaxi1.jpg);}
+}
