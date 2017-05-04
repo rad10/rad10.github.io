@@ -1,0 +1,54 @@
+body {
+	background-image:url(../images/bckgcurve22.png);
+	background-color:#7FFC00;
+	font-family:Verdana, Geneva, sans-serif;
+	color:#FF6400;
+}
+a {
+	text-decoration:none;
+	color:#FF6400;
+	font-weight:bold;
+}
+#container {
+	width:800px;
+	margin:auto;
+	background-color:#2F2F2F;
+	border: 3px solid #000;
+}
+header img {
+	border: 2px solid #000;
+	background-color: #EFEFEF;
+	background-image:url(../images/swirl.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+/*Navigation style*/
+nav div {
+	margin:auto;
+	width:750px;
+	border:3px solid #000;
+	background-color:#C7C7C7;
+	padding:3px;
+}
+nav div a {
+	border:thin solid #000;
+	background-color:#7C09B7;
+	text-decoration:none;
+	color: #FFF;
+	font-weight:bold;
+}
+nav div a:hover {
+	color:#000;
+	background-color:#FF6400;
+}
+/*Nav End*/
+/*Main Style*/
+main {
+	width:700px;
+}
+/*Main End*/
+/*Footer Style*/
+footer {
+	text-align:center;
+	clear:both;
+}

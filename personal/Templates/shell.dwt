@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!-- TemplateBeginEditable name="doctitle" -->
+<title>Watchdog - Homepage</title>
+<!-- TemplateEndEditable -->
+<link href="../sources/scripts/main.css" rel="stylesheet" type="text/css" />
+<!-- TemplateBeginEditable name="head" -->
+<!-- TemplateEndEditable -->
+</head>
+
+<body>
+<br /><br /><br /><br /><br /><br />
+<div id="container">
+<header><img src="../sources/images/watch_dog2.png" alt="Watch_Dog" /></header>
+<br />
+<nav>
+<a href="../index.html" alt="Homepage"><img src="../sources/images/homepage.png" alt="Title" /></a>
+<div id="navInt">
+	<a href="../index.html" alt="Watchdog - index">Homepage</a>
+</div>
+<br />
+<div id="navExt">
+	<a href="http://www.angove365.com/angove411" alt="Angove411" target="_blank">Angove411</a>
+    <a href="http://www.mhsweb1.com" alt="MHS Web 1" target="_blank">MHS Web1</a>
+    <a href="http://www.w3schools.com" alt="W3Schools" target="_blank">W3Schools</a>
+</div>
+</nav>
+<hr />
+<main><!-- TemplateBeginEditable name="main" -->main<!-- TemplateEndEditable -->
+
+</main>
+<footer>
+<hr />
+	<p>Ask for help: <a href="mailto:nrc1mr.e3@gmail.com">Here</a></p>
+    <p>
+      <!-- #BeginDate format:Am3m -->12/29/2016  11:05<!-- #EndDate --></p>
+  </footer>
+</div>
+</body>
+</html>
