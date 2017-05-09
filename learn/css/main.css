@@ -1,0 +1,24 @@
+/*Init*/
+
+
+
+
+
+/*main*/
+body {
+	background-color:#333;
+}
+#container {
+	width: 80%;
+	border:thin solid #333;
+	background-color:#fff;
+}
+header {
+	border:thick solid #000;
+	margin:auto;
+	background-color:#d57100;
+}
+#banner {
+	border:thin solid #000;
+	margin:auto;
+}
