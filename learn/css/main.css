@@ -13,6 +13,25 @@ body {
 	border:thin solid #333;
 	background-color:#fff;
 }
+a {
+	font-weight:bold;
+	color:#930;
+}
+a:hover {
+	color:#d57100;
+}
+#titleFont {
+	text-align:center;
+	color:#ff8700;
+	font-size:48px;
+	font-weight:bold;
+}
+#subtitle {
+	color:#666;
+	font-style:italic;
+	font-family:"Times New Roman", Times, serif;
+}
+/*header*/
 header {
 	border:thick solid #000;
 	margin:auto;
