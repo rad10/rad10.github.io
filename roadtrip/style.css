@@ -1,0 +1,86 @@
+body {
+	background-color:#57C4C4;
+}
+#container {
+	width:1000px;
+	border: thin solid #000;
+	background-color:#C3C3C3;
+	margin:auto;
+}
+h1, h3, header, nav, footer {text-align:center;}
+main {
+	border: thin solid #000;
+}
+nav a {
+	background-color:#090;
+	border:thin solid #000;
+	padding:2px;
+	text-decoration:none;
+	color:#C3C3C3;
+	font-weight:bold;
+}
+nav a.current {
+	background-color:#F60;
+	color:#FFF;
+}
+#bigMap {text-align:center;}
+#bigMap img {border:thin solid #000;}
+/*map */
+#divMap {
+	margin:auto;
+	text-align:center;
+	position:relative;
+}
+#map {
+	border:thin solid #000;
+	z-index:0;
+}
+#divMap map area {
+	color:$F00;
+	border: thin solid #000;
+}
+#mapInfo div.mapInfo {
+	width:200px;
+	height:200px;
+	background-color:#E5E5E5;
+	border:thick solid #00F;
+	position:absolute;
+	z-index:1;
+	visibility:hidden;
+	text-align:left;
+	font-size:12px;
+}
+#mapInfo div.mapInfo img {
+	height:60px;
+	margin:auto;
+	padding-top:5px;
+	padding-left:30px;
+}
+div.mapInfo table, div.mapInfo table tr, div.mapInfo table tr td {border:thin solid #000; border-collapse:collapse;}
+div.mapInfo table {margin:auto;}
+div.mapInfo table tr th {
+	background-color:#00F;
+	color:#FFF;
+}
+div.mapInfo table tr td:first-child {text-align:right;}
+/* city infoboards */
+#infoLiverpool {left:27%;}
+#infoKingston {top:30%; left:13%;}
+#infoLondon {top:17%; left:36%;}
+#infoCologne {top:30%; left:36%;}
+#infoHamburg {left:68%;}
+#infoBerlin {top:5%; left:57%;}
+#infoAutobahn {top:36%; left:70%;}
+#infoMunich {top:50%; left:51%;}
+#infoFrankfurt {top:40%; left:42%;}
+#infoParis {top:53%; left:22%;}
+/* /map infoboards */
+/* /map */
+/*Data board */
+#data {
+	border:thick solid #000;
+	border-collapse:collapse;
+}
+#e1,#e2,#e3,#e4,#e5,#e6,#e7,#e8,#e9,#e10,#e11,#e12 {font-size:10px;}
+#data th {background-color:#03C; color:#FCFCFC;}
+#data th, #data td {border:thin solid #000;}

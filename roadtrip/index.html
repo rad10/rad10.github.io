@@ -1,0 +1,389 @@
+<!doctype html>
+<html>
+<head>
+<link href="style.css" type="text/css" rel="stylesheet" />
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="map.js"></script>
+<title>Road Trip Map</title>
+
+
+</head>
+<body>
+<div id="container">
+<header>
+<h1>Roadtrip Map</h1>
+<h4>By Nick Cottrell</h4>
+
+
+</header>
+<hr />
+<main>
+<br>
+<nav>
+<a href="index.html" class="current" title="See the map in Miles">Miles</a>
+<a href="kilometers.html" title="See the map in Kilometers">Kilometers</a>
+</nav>
+<br><br>
+<p id="bigMap"><img src="images/bigMap.png" alt="World Map" /></p>
+<h1>Interactive Map</h1>
+<h3>Place mouse over travel points to see info</h3>
+<br><br>
+<div id="divMap">
+<div id="mapInfo">
+<div id="infoLiverpool" class="mapInfo">
+	<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNROMHQbwlH7jw7qV81xOYB61lxGMiRiHQecx8J-u32SN9XTyd" alt="liverpool" />
+    <table>
+    <tr>
+    <th>#2</th>
+    <th>Liverpool, UK</th>
+    </tr><tr>
+    <td>Distance:</td>
+    <td>4185mi</td>
+    </tr><tr>
+    <td>Dist from Mel:</td>
+    <td>4185mi</td>
+    </tr><tr>
+    <td>Disp from Mel:</td>
+    <td>4185mi</td>
+    </tr><tr>
+    <td>Time:</td>
+    <td>11.2hrs</td>
+    </tr><tr>
+    <td>Velocity:</td>
+    <td>373.7mph@30 N of E</td>
+    </tr>
+    </table>
+</div>
+<div id="infoKingston" class="mapInfo">
+	<img src="https://i.ytimg.com/vi/5oax984MxfM/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLBtnz1iGY1a38an676TrvSi0_yZkg" alt="Kingston University" />
+    <table>
+    <tr>
+    <th>#3</th>
+    <th>Kingston Uni. UK</th>
+    </tr><tr>
+    <td>Distance:</td>
+    <td>225mi</td>
+    </tr><tr>
+    <td>Dist from Mel:</td>
+    <td>4410mi</td>
+    </tr><tr>
+    <td>Disp from Mel:</td>
+    <td>4321mi</td>
+    </tr><tr>
+    <td>Time:</td>
+    <td>4.09hrs</td>
+    </tr><tr>
+    <td>Velocity:</td>
+    <td>55mph@50 S of E</td>
+    </tr>
+    </table>
+</div>
+<div id="infoLondon" class="mapInfo">
+	<img src="https://i.ytimg.com/vi/OEJf2UrumHg/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLAM4FN1xv2h8YDVg9433W1DKlFFlw" alt="London" />
+    <table>
+    <tr>
+    <th>#4</th>
+    <th>London, UK</th>
+    </tr><tr>
+    <td>Distance:</td>
+    <td>11.6mi</td>
+    </tr><tr>
+    <td>Dist from Mel:</td>
+    <td>4421.6mi</td>
+    </tr><tr>
+    <td>Disp from Mel:</td>
+    <td>4327mi</td>
+    </tr><tr>
+    <td>Time:</td>
+    <td>0.21hrs</td>
+    </tr><tr>
+    <td>Velocity:</td>
+    <td>55mph@45 N of E</td>
+    </tr>
+    </table>
+</div>
+<div id="infoCologne" class="mapInfo">
+	<img src="https://travelinfo.pro/media/cache/08/db/08dbb42e4bab659b2e01fff7a7e9f09c.jpg" alt="Cologne" />
+    <table>
+    <tr>
+    <th>#5</th>
+    <th>Cologne, DE</th>
+    </tr><tr>
+    <td>Distance:</td>
+    <td>367mi</td>
+    </tr><tr>
+    <td>Dist from Mel:</td>
+    <td>4788.6mi</td>
+    </tr><tr>
+    <td>Disp from Mel:</td>
+    <td>4633mi</td>
+    </tr><tr>
+    <td>Time:</td>
+    <td>6.67hrs</td>
+    </tr><tr>
+    <td>Velocity:</td>
+    <td>55mph@10 S of E</td>
+    </tr>
+    </table>
+</div>
+<div id="infoHamburg" class="mapInfo">
+	<img src="http://img.beevar.com/thumb/170x99/8/24/824857562e0f34a0.jpg" alt="Hamburg" />
+    <table>
+    <tr>
+    <th>#6</th>
+    <th>Hamburg, DE</th>
+    </tr><tr>
+    <td>Distance:</td>
+    <td>264mi</td>
+    </tr><tr>
+    <td>Dist from Mel:</td>
+    <td>5052.6mi</td>
+    </tr><tr>
+    <td>Disp from Mel:</td>
+    <td>4702mi</td>
+    </tr><tr>
+    <td>Time:</td>
+    <td>4.80hrs</td>
+    </tr><tr>
+    <td>Velocity:</td>
+    <td>55mph@60 N of E</td>
+    </tr>
+    </table>
+</div>
+<div id="infoBerlin" class="mapInfo">
+	<img src="https://i0.wp.com/autocamperverden.dk/wp-content/uploads/2015/06/Leje-Autocamper-Berlin-Tyskland-Autocamper-udlejning-Berlin-Tyskland1-e1433446096405.jpg?resize=120%2C100" alt="Berlin" />
+    <table>
+    <tr>
+    <th>#7</th>
+    <th>Berlin, DE</th>
+    </tr><tr>
+    <td>Distance:</td>
+    <td>179mi</td>
+    </tr><tr>
+    <td>Dist from Mel:</td>
+    <td>5231.6mi</td>
+    </tr><tr>
+    <td>Disp from Mel:</td>
+    <td>4859mi</td>
+    </tr><tr>
+    <td>Time:</td>
+    <td>3.25hrs</td>
+    </tr><tr>
+    <td>Velocity:</td>
+    <td>55mph@60 E of S</td>
+    </tr>
+    </table>
+</div>
+<div id="infoAutobahn" class="mapInfo">
+	<img src="https://i.ytimg.com/vi/EJa4u3Sf7d8/default.jpg" alt="Das Autobahn" />
+    <table>
+    <tr>
+    <th>#8</th>
+    <th>Das Autobahn, DE</th>
+    </tr><tr>
+    <td>Distance:</td>
+    <td>280mi</td>
+    </tr><tr>
+    <td>Dist from Mel:</td>
+    <td>5511.6mi</td>
+    </tr><tr>
+    <td>Disp from Mel:</td>
+    <td>4816mi</td>
+    </tr><tr>
+    <td>Time:</td>
+    <td>5.09hrs</td>
+    </tr><tr>
+    <td>Velocity:</td>
+    <td>55mph@60 W of S</td>
+    </tr>
+    </table>
+</div>
+<div id="infoMunich" class="mapInfo">
+	<img src="http://turizm-puteshestvuem.ru/wp-content/uploads/2016/06/in-munich-oktoberfest-in-september-120x90.jpg" alt="Munich" />
+    <table>
+    <tr>
+    <th>#9</th>
+    <th>Munich, DE</th>
+    </tr><tr>
+    <td>Distance:</td>
+    <td>135mi</td>
+    </tr><tr>
+    <td>Dist from Mel:</td>
+    <td>5646.6mi</td>
+    </tr><tr>
+    <td>Disp from Mel:</td>
+    <td>4829mi</td>
+    </tr><tr>
+    <td>Time:</td>
+    <td>2.45hrs</td>
+    </tr><tr>
+    <td>Velocity:</td>
+    <td>55mph@20 W of S</td>
+    </tr>
+    </table>
+</div>
+<div id="infoFrankfurt" class="mapInfo">
+	<img src="https://i.ytimg.com/vi/2OUTN1Eyv_k/hqdefault.jpg?sqp=-oaymwEWCKgBEF5IWvKriqkDCQgBFQAAiEIYAQ==&rs=AOn4CLD-3hREJD1SIif5EO7vE2zvkc99bg" alt="Frankfurt" />
+    <table>
+    <tr>
+    <th>#10</th>
+    <th>Frankfurt, DE</th>
+    </tr><tr>
+    <td>Distance:</td>
+    <td>244mi</td>
+    </tr><tr>
+    <td>Dist from Mel:</td>
+    <td>5890.6mi</td>
+    </tr><tr>
+    <td>Disp from Mel:</td>
+    <td>4723mi</td>
+    </tr><tr>
+    <td>Time:</td>
+    <td>4.44hrs</td>
+    </tr><tr>
+    <td>Velocity:</td>
+    <td>55mph@45 N of W</td>
+    </tr>
+    </table>
+</div>
+<div id="infoParis" class="mapInfo">
+	<img src="http://nextstagearts.org/wp-content/uploads/2017/06/France-Paris3-300x106.jpg" alt="Paris" />
+    <table>
+    <tr>
+    <th>#11</th>
+    <th>Paris, FR</th>
+    </tr><tr>
+    <td>Distance:</td>
+    <td>365mi</td>
+    </tr><tr>
+    <td>Dist from Mel:</td>
+    <td>6255.6mi</td>
+    </tr><tr>
+    <td>Disp from Mel:</td>
+    <td>4475mi</td>
+    </tr><tr>
+    <td>Time:</td>
+    <td>6.64hrs</td>
+    </tr><tr>
+    <td>Velocity:</td>
+    <td>55mph@15 S of W</td>
+    </tr>
+    </table>
+</div>
+</div>
+<img src="images/map.png" alt="roadmap" name="map" width="950" height="458" id="map" usemap="roadmap" />
+<map name="roadmap">
+  <area shape="circle" id="mapLiverpool" coords="247,130,7" alt="Liverpool">
+  <area shape="circle" id="mapKingston" coords="329,235,6" alt="Kingston">
+  <area shape="circle" id="mapLondon" coords="338,225,6" alt="London">
+  <area shape="circle" id="mapCologne" coords="561,255,5" alt="Cologne">
+  <area shape="circle" id="mapHamburg" coords="657,121,5" alt="Hamburg">
+  <area shape="circle" id="mapBerlin" coords="763,173,5" alt="Berlin">
+  <area shape="circle" id="mapAutobahn" coords="679,316,6" alt="The Autobahn">
+  <area shape="circle" id="mapMunich" coords="707,395,5" alt="Munich">
+  <area shape="circle" id="mapFrankfurt" coords="615,297,5" alt="Frankfurt">
+  <area shape="circle" id="mapParis" coords="415,359,5" alt="Paris">
+</map>
+</div>
+<br style="clear:both;"><hr><br>
+<h1>Data Involved</h1>
+<p>for a more detailed version, download the spreadsheet <a href="mapPlan.xlsx">here</a></p>
+<br>
+<table id="data">
+<tr>
+<th>Measurement (mi)</th>
+<th id="dataMelbourne1">Melbourne, FL</th>
+<th id="dataLiverpool">Liverpool, UK</th>
+<th id="dataKingston">Kingston Uni. UK</th>
+<th id="dataLondon">London, UK</th>
+<th id="dataCologne">Cologne, DE</th>
+<th id="dataHamburg">Hamburg, DE</th>
+<th id="dataBerlin">Berlin, DE</th>
+<th id="dataAutobahn">Autobahn, DE</th>
+<th id="dataMunich">Munich, DE</th>
+<th id="dataFrankfurt">Frankfurt, DE</th>
+<th id="dataParis">Paris, FR</th>
+<th id="dataMelbourne2">Melbourne, FL</th>
+</tr><tr>
+<th>Distance (mi)</th>
+<td id="a1">0</td>
+<td id="a2">4185</td>
+<td id="a3">225</td>
+<td id="a4">11.6</td>
+<td id="a5">367</td>
+<td id="a6">264</td>
+<td id="a7">179</td>
+<td id="a8">280</td>
+<td id="a9">135</td>
+<td id="a10">244</td>
+<td id="a11">365</td>
+<td id="a12">4475</td>
+</tr><tr>
+<th>Distance from Melbourne (mi)</th>
+<td id="b1">0</td>
+<td id="b2">4185</td>
+<td id="b3">4410</td>
+<td id="b4">4421.6</td>
+<td id="b5">4788.6</td>
+<td id="b6">5052.6</td>
+<td id="b7">5231.6</td>
+<td id="b8">5511.6</td>
+<td id="b9">5646.6</td>
+<td id="b10">5890.6</td>
+<td id="b11">6255.6</td>
+<td id="b12">10730.6</td>
+</tr><tr>
+<th>Displacement from Melbourne (mi)</th>
+<td id="c1">0</td>
+<td id="c2">4185</td>
+<td id="c3">4321</td>
+<td id="c4">4327</td>
+<td id="c5">4633</td>
+<td id="c6">4702</td>
+<td id="c7">4859</td>
+<td id="c8">4816</td>
+<td id="c9">4829</td>
+<td id="c10">4723</td>
+<td id="c11">4475</td>
+<td id="c12">0</td>
+</tr><tr>
+<th>Time (hrs)</th>
+<td id="d1">0</td>
+<td id="d2">11.2</td>
+<td id="d3">4.09</td>
+<td id="d4">0.21</td>
+<td id="d5">6.67</td>
+<td id="d6">4.8</td>
+<td id="d7">3.25</td>
+<td id="d8">5.09</td>
+<td id="d9">2.45</td>
+<td id="d10">4.44</td>
+<td id="d11">6.64</td>
+<td id="d12">12.9</td>
+</tr><tr>
+<th>Velocity (mph)</th>
+<td id="e1">0</td>
+<td id="e2">373.7mph@30 N of E</td>
+<td id="e3">55mph@50 S of E</td>
+<td id="e4">55mph@45 N of E</td>
+<td id="e5">55mph@10 S of E</td>
+<td id="e6">55mph@60 N of E</td>
+<td id="e7">55mph@60 E of S</td>
+<td id="e8">55mph@60 W of S</td>
+<td id="e9">55mph@20 W of S</td>
+<td id="e10">55mph@45 N of W</td>
+<td id="e11">55mph@15 S of W</td>
+<td id="e12">346.9mph@15 S of W</td>
+</tr>
+</table>
+<p>Total Distance: 10,730.6 mi</p>
+<p>Total Displacement: 0</p>
+</main>
+<footer>
+<p>Nick Cottrell</p>
+<p>9/20/2017</p>
+<p>Physics</p>
+</footer>
+</div>
+</body>
+</html>
