@@ -1,0 +1,4 @@
+#toolbar {text-align: center; float: center; display: inline center;}
+#toolbar a {display: inline; font-family: broadway; text-size: 20px; color: black; background-color: lightGrey; text-decoration: none; border: 5px solid black; padding: 10px;}
+#toolbar a:hover {background-color: #c1c138; }
+img {border: 10px solid black;}

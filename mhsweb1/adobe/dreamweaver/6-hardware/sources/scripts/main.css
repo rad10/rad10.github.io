@@ -1,0 +1,24 @@
+body {
+	background-color: #FFFFCC;
+	text-align: center;
+	background-image: url(../images/matrixBackground.gif);
+	font-family: Arial, Verdana, sans-serif;
+}
+#by {
+	font-size: 16px;
+	font-style: italic;
+}
+.navbar {
+	font-size: 14px;
+}
+.copyright {
+	text-align: center;
+	font-size: 10px;
+}
+#container {
+	width: 800px;
+	border: medium solid #03F;
+	background-color: #FFC;
+	margin: auto;
+	text-align: center;
+}

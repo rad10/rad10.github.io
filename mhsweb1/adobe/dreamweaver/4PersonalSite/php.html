@@ -1,0 +1,33 @@
+<!doctype HTML>
+<html>
+<head>
+	<title>4PersonalSite</title>
+	<link href="sources/scripts/main.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+	<link href="sources/scripts/upload.php" rel="php" />
+	</head>
+<body>
+<img class="titlePic" src="" alt="titlePic" />
+<div id="navbar">
+	<a href="index.html">Home</a>
+	<a href="http://www.angove365.com/angove411/" alt="http://www.angove365.com" target="_blank">Angove's Site</a>
+	<a href="personal.html">Personal</a>
+	<a href="school.html">School</a>
+	<a href="photoshop.html">Photoshop</a>	
+</div>
+<br /><br /><br /><br /><br /><br />
+<div id="body">
+	<?php
+	echo "Lets test the site";
+	?>
+	<form action="upload.php" method="post" enctype="multipart/form-data">
+    Select image to upload:
+    <input type="file" name="fileToUpload" id="fileToUpload">
+    <input type="submit" value="Upload Image" name="submit">
+</form>
+	
+</div>
+<address>Nick Cottrell Web Design PD01</address>
+<img id="palette" src="sources/images/Palette.PNG" alt="paletton" />
+</body>
+</html>

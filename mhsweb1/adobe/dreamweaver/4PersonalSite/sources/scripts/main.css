@@ -1,0 +1,70 @@
+body {background-color: #9ed78f;}
+h1, h2, h3, h4, h5, h6 {font-family: 'Oswald', sans-serif;}
+a {font-weight: bold;
+	text-decoration: none;
+	color: #05ffff;
+	}
+a:hover {color: #ffa500;}
+
+#navbar {display: inline;
+	background-color: #f1f1f1;
+	border: 5px solid #000000;
+	padding: 15px;
+	}
+#navbar a {
+	Display: inline;
+	padding: 10px;
+	background-color: #F5F5F5;
+	border: 2.5px solid #000000;
+	text-decoration: none;
+	color: #000000;
+	font-family: broadway;}
+.titlePic {display: inline;
+	border: 1px solid transparent;
+	}
+#navbar a:hover {background-color: #ff0000;
+	color: #0000ff;
+	}
+#navbar a:visited {color: #0000ff;}
+#body {
+	background-color: #ECECEC;
+	border: 2px solid #000000;
+	margin: auto;
+	width: 85%;}
+img {border: 2px solid #000000;}
+.wordart {border: 2px solid transparent;}
+#data {background-color: #ff0000;
+	border: 3px solid #000000;
+	}
+#jet {width: 307.5px; height: 197.5px;}
+div {margin: auto;}
+
+#photoshopImages {width: auto;}
+#palette {width: 421px;
+	height: 298px;
+	border: 1px solid #000000
+	}
+.fact {font-weight: bold;}
+#photoshopImages tr td a img {width: 320px; height: 180px;}
+#school tr td #links {background-color: #AA3939; border: 3px solid #000000;}
+#school tr td #links a {font-family: broadway; color: #000000;}
+#school tr td #links a:hover {color: #0000ff;}
+.textpad {border: 5px solid #000000;
+	background-color: #aa3939;
+	}
+
+
+#picLink {text-align: center;}
+#picLink a img {border: 5px solid #000000; background-color: #105f25;}
+#picLink a:hover img {background-color: #ff0000;}
+#PSE {text-align: right; padding: 15px;}
+
+#schoolPage h1 {text-align: center;}
+#schoolPage p {text-align: center;}
+#schoolPage p img {width: 640px; Height: 360px;}
+#schedule, #schedule tr, #schedule tr td {border: 2px solid #000000;
+	border-collapse: collapse;
+	text-align: center;
+	}
+#schedule {width: 80%; align: center;}
+#schedule tr td img {width: 172px; height: 215px;}

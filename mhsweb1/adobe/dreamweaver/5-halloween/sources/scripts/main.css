@@ -1,0 +1,19 @@
+#navbar, #navbar a, #navbar div a {display: inline;}
+#container {
+	background-color: #FFFFFF;
+	border: medium solid #3f3323;
+	margin: auto;
+	text-align: center;
+	width: 75%;
+}
+body {
+	background-color: #E9AC3A;
+}
+a:link {
+	color: #A6732F;
+}
+h1,h2,h3,h4,h5,h6 {
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", "DejaVu Sans", Verdana, sans-serif;
+}
+#banner {border: 0px solid transparent;}
+img {border: 5px solid 3f3323;}

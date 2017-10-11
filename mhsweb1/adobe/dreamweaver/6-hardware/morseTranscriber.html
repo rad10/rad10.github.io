@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Morse Code Transcriber</title>
+<link href="sources/scripts/main.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="container">
+  <div class="header">
+  
+    <div id="navbar">
+    
+    </div>
+  </div>
+  <br><br>
+  <h1>Morse Transcriber</h1>
+  <br>
+  <button onclick="morseText()">Morse to Text</button>
+  <button onclick="textMorse()">Text to Morse</button>
+  <br><br>
+  <a id="inType">Input: </a><input id="inputA" type="text" /><br>
+  <br>
+  <br>
+  <p>Output: <a id="answer"></a></p>
+  <script type="text/javascript">
+  var text2morse = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "0", "1", "2", "3", "4", "5", "6", "7", "8", "9", ",", ".", "?", "/", "@", "=", ":", "'", "(", ")", "-", "+"];
+  var morse2text = [".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".--.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", "-----", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.", "--..--", "-.-.-.", "..--..", "-..-.", ".--.-.", "-...-", "---...", ".----.", "-.--.", "-.--.-", "-....-", ".-.-."];
+  function textMorse(){
+    document.getElementById("inType").innerHTML = "Input Text: ";
+    var inText = document.getElementById("inputA").value.toLowerCase();
+	var out = [];
+	for (i=0; i<(inText.length+1); i++) {
+	  for (o=0; o<text2morse.length; o++) {
+		if (inText.charAt(i)===text2morse[o]) {
+		  out.push(morse2text[o]); 
+		};
+	  };
+	};
+    document.getElementById("answer").innerHTML = out.join(" ");
+};
+  function morseText() {
+    document.getElementById("inType").innerHTML = "Input Morse: ";
+    var inText = document.getElementById("inputA").value.split(" ");
+	var out = [];
+	for (i=0; i<(inText.length+1); i++) {
+	  for (o=0; o<morse2text.length; o++) {
+		if (inText[i]===morse2text[o]) {
+		  out.push(text2morse[o]); 
+		};
+	  };
+	};
+
+    document.getElementById("answer").innerHTML = out.toString();
+  };
+  </script>
+  <div class="footer">
+  <p>By Nick Cottrell</p>
+  <p>11/8/16</p>
+  </div>
+</div>
+</body>
+</html>
