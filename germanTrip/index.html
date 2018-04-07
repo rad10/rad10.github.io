@@ -1,27 +1,204 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<!--<head>
+<head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <title>German Trip</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBZz3BqPXWHWAhdJKsaTmzgworGdCdahLE"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="js/style.js"></script>
 </head>
 
 <body>
 <div id="container">
 <header>
+<img src="http://www.business2go.net/images/germanyheader2.jpg" alt="Germany Trip Header" width="800" />
 <h1>This is my German Trip</h1>
 </header>
 <nav>
-<p><a href="schedule.html">My Schedule</a> | <a href="costs.html">Costs and expenses</a> | <a href="">Plans</a></p>
+<!--<p><a href="schedule.html">My Schedule</a> | <a href="costs.html">Costs and expenses</a> | <a href="">Plans</a></p>-->
 </nav>
+<hr />
 <main>
+<h2 id="hsummary">Summary</h2>
+<hr />
+<div id="csummary"><p>So sadly my great great aunt Mia died recently at the age of 89 (which makes me ask how old I am in perspective, or how this is possible); however, she blessed me with 5 grand and told me to go travel germany. Though this is just a concept draft, I tried to get as advanced as i could in my draft.</p>
+<hr />
+</div>
+<h2 id="hschedule">Schedule</h2>
+<hr />
+<div id="cschedule"><p>This is the schedule that I took for my trip. you can find your own copy <a href="sources/GermanTripCalendar.ics">here</a>.</p>
+<div id="schedule"></div>
+<hr />
+</div>
+<h2 id="hexpenses">Expenses</h2>
+<hr />
+<div id="cexpenses"><p>The expenses weren't too bad. I had a good use of my money to the point where I just gave myself 50 euro per day for any food that I found while on the go. That still gave me free money, so I ended up with ~$80 for souvineers and in case of emergency.</p>
+<div id="expenses">
+<div class="right">
+<h3>The details are here</h3>
+<h4 id="hhousing">Housing</h4>
+<table id="chousing">
+<tr>
+<th>Housing</th><th>Price</th><th>Nights</th><th>Total</th>
+</tr><tr>
+<td>Die Wohngemeinschaft Hostel</td><td>$31</td><td>3</td><td>$93</td>
+</tr><tr>
+<td>Willy Hotel</td><td>$48</td><td>3</td><td>$144</td>
+</tr><tr>
+<td>Am Sendlinger Tor</td><td>$71</td><td>3</td><td>$213</td>
+</tr><tr>
+<td>Citystay Mitte</td><td>$28</td><td>2</td><td>$56</td>
+</tr><tr>
+<td>Apartment-Hotel Hamburg Mitte</td><td>$87</td><td>2</td><td>$174</td>
+</tr><tr>
+<th>Total</th><td><b>$680</b></td>
+</tr>
+</table>
+<h4 id="htransport">Transportation</h4>
+<table id="ctransport">
+<tr>
+<th>Transportation</th><th>Price</th>
+</tr><tr>
+<td>Flight: MLB</td><td>$2,075.21</td>
+</tr><tr>
+<td>Train: Dusseldorf</td><td>$25</td>
+</tr><tr>
+<td>Train: Cologne</td><td>$25</td>
+</tr><tr>
+<td>Train: Frankfurt</td><td>$25</td>
+</tr><tr>
+<td>Train: Munich</td><td>$83.38</td>
+</tr><tr>
+<td>Train: Berlin</td><td>$30.58</td>
+</tr><tr>
+<td>Train: Hamburg</td><td>$36.65</td>
+</tr><tr>
+<td>Flight: DUS</td><td>$0 (goes with 1st flight)</td>
+</tr><tr>
+<th>Total</th><td><b>$2,300.82</b></td>
+</tr>
+</table>
+<h4 id="hfood">Food</h4>
+<table id="cfood">
+<tr>
+<th>Place</th><th>Price</th>
+</tr><tr>
+<td>Freestyle (x12)</td><td>$61.4 (x12)</td>
+</tr><tr>
+<th>Total</th><td><b>$736.80</b></td>
+</tr>
+</table>
+<h4 id="hevent">Events and Services</h4>
+<table id="cevent">
+<tr>
+<th>Events and Services</th><th>Price</th>
+</tr><tr>
+<td>Koln Cathedral</td><td>$0</td>
+</tr><tr>
+<td>Mespelbrunn Castle</td><td>$0</td>
+</tr><tr>
+<td>Bike Tour in Munich</td><td>$37</td>
+</tr><tr>
+<td>Berlin Wall Memorial</td><td>$0</td>
+</tr><tr>
+<td>Frog with the mask</td><td>$37.99</td>
+</tr><tr>
+<th>Total</th><td><b>$74.99</b></td>
+</tr>
+</table>
+<h4 id="hmisc">Souvineers and Misc</h4>
+<table id="cmisc">
+<tr>
+<td>Souvineer Money per day</td><td>$92.87</td>
+</tr><tr>
+<th>Total</th><td><b>$1,207.39</b></td>
+</tr>
+</table>
+</div>
+<div class="left">
+<table id="totals">
+<tr>
+<th>Sum of total costs</th>
+</tr><tr>
+<th>Category</th><th>Costs</th>
+</tr><tr>
+<td>Cost of Housing</td><td>$680</td>
+</tr><tr>
+<td>Cost of Transportation</td><td>$2,300.82</td>
+</tr><tr>
+<td>Cost of Food</td><td>$736.80</td>
+</tr><tr>
+<td>Prics for events and services</td><td>$74.99</td>
+</tr><tr>
+<td>Souvineer money and misc</td><td>$1,207.39</td>
+</tr><tr>
+<th>Total</th><td><b>$5,000.00</b></td>
+</tr>
+</table>
+</div>
+</div>
+<hr style="clear:both;" />
+</div>
+<h2 id="hlocation">Location, Location, Location</h2>
+<hr />
+<div id="clocation"><p>Heres a chronological list of all the places that ill go to at every stop.</p>
+<div id="map_gui">
+<div id="map_map">
 
+</div>
+<div id="map_options">
+<h3 id="germany_header">Germany</h3>
+<ol>
+<h4 id="cologne_header">Cologne</h4>
+<div id="map_cologne">
+<li>Dusseldorf Intl</li>
+<li><a target="_blank" href="https://goo.gl/maps/Hap1azN3ejm" title="Richard-Wagner-Straße 39, 50674 Köln, Germany">Die Wohngemeinschaft Hostel</a></li>
+<li><a target="_blank" href="https://goo.gl/maps/iWMJYeY226k" title="Cologne Cathedral, 50667 Köln, Germany">Cologne Cathedral</a></li>
+<li><a target="_blank" href="https://goo.gl/maps/GR3oBKZMosG2" title="Cologne Central Station, Trankgasse, Cologne, Germany">Cologne Hauptbahnhof</a></li>
+</div>
+<h4 id="frankfurt_header">Frankfurt</h4>
+<div id="map_frankfurt">
+<li><a target="_blank" href="https://goo.gl/maps/jNDqGji6vF42" title="Neue Mainzer Str. 24, 60311 Frankfurt am Main, Germany">Willy Hotel</a></li>
+<li><a target="_blank" href="https://goo.gl/maps/qMfF6mCNmHx" title="Mespelbrunn Castle, Schloßallee, 63875 Mespelbrunn, Germany">Mespelbrunn Castle</a></li>
+<li><a target="_blank" href="https://goo.gl/maps/nyJJG29qxJr" title="60239, Am Hauptbahnhof, 60329 Frankfurt am Main, Germany">Frankfurt Hauptbahnhof</a></li>
+</div>
+<h4 id="munich_header">Munich</h4>
+<div id="map_munich">
+<li><a target="_blank" href="https://goo.gl/maps/w2ScHq3pzZr" title="Oberanger 47, 80331 München, Germany">Am Sendlinger Tor</a></li>
+<li><a target="_blank" href="https://goo.gl/maps/thEmPfXaZYK2" title="80335 Munich, Germany">Bike Tour</a></li>
+<li><a target="_blank" href="https://goo.gl/maps/RDFJq24wnyB2" title="Arnulfstraße 15, 80335 München, Germany">Munich Hauptbahnhof</a></li>
+</div>
+<h4 id="berlin_header">Berlin</h4>
+<div id="map_berlin">
+<li><a target="_blank" href="https://goo.gl/maps/giQToHcdmd92" title="Rosenstr. 16, 10178 Berlin, Germany">Citystay Mitte</a></li>
+<li><a target="_blank" href="https://goo.gl/maps/uitcn493c1t" title="Bernauer Str. 111, 13355 Berlin, Germany">Berlin Wall</a></li>
+<li><a target="_blank" href="https://goo.gl/maps/qTMqQ2SYhcm" title="Hauptbahnhof, Europaplatz 1, 10557 Berlin, Germany">Europlatz</a></li>
+</div>
+<h4 id="hamburg_header">Hamburg</h4>
+<div id="map_hamburg">
+<li><a target="_blank" href="https://goo.gl/maps/rYe7wBEeb2k" title="Borstelmannsweg 133, 20537 Hamburg, Germany">Apartment-Hotel Hamburg Mitte</a></li>
+<li><a target="_blank" href="https://goo.gl/maps/PiU4cufj8AU2" title="Reeperbahn 5, 20359 Hamburg, Germany">Imperial Theater</a></li>
+<li><a target="_blank" href="https://goo.gl/maps/HTKPUHuVPQE2" title="20099 Hamburg, Germany">Hamburg Hauptbahnhof</a></li>
+</div>
+</ol>
+</div>
+
+<script src="js/map.js"></script>
+<script src="js/mapStyle.js"></script>
+</div>
+<hr style="clear:both;" />
+</div>
 </main>
 <footer>
-
+<p>Made by Nick Cottrell<br />
+Last Updated: 
+  <!-- #BeginDate format:Am3 -->04/07/2018<!-- #EndDate -->
+  <br />
+German 2</p>
 </footer>
 </div>
-</body>/-->
-<head><title>ERROR - 404</title></head>
-<body><h1>ERROR 404</h1><p><b>This website couldnt be found</b></p></body>
+</body>
+<!--<head><title>ERROR - 404</title></head>
+<body><h1>ERROR 404</h1><p><b>This website couldnt be found</b></p></body>/-->
 </html>

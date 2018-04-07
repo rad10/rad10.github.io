@@ -1,16 +1,67 @@
 @charset "utf-8";
 body {
-	background-color:#09F;
+	/*background-color:#F7F7F7;*/
+	background-color:#6FF;
+	background-image:url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/86/Flag_of_Germany_%283-2_aspect_ratio%29.svg/150px-Flag_of_Germany_%283-2_aspect_ratio%29.svg.png");
+	background-position:top;
+	background-attachment:fixed;
+	background-repeat:repeat-x;
 }
 #container {
-	background-color: #CCC;
+	background-color: #F3F2F2;
 	width: 800px;
 	margin:auto;
 	border:3px solid #000;
 }
-header {
+header, footer {
 	text-align:center;
 }
 nav {
 	text-align:center;
+}
+hr {
+	color:#9E9E9E;
+}
+
+h1, h2, h3, h4 {
+	text-align:center;
+	color:#FFB541;
+}
+.left {
+	width:400px;
+}
+.right{
+	width:400px;
+	float:right;
+}
+table {
+	border:5px solid #9E9E9E;
+	text-align:center;
+}
+th, td {border:3px solid #9E9E9E;}
+th{background-color:#F90;}
+#hhousing, #htransport, #hfood, #hevent, #hmisc {
+	border: 2px solid #9E9E9E;
+}
+#map_options h3, #map_options h4 {
+	border: 2px solid #9E9E9E;
+}
+
+#map_map{
+	width:500px;
+	height:500px;
+	float:right;
+	margin:10px;
+	border:4px solid #9E9E9E;
+}
+#map_options{
+	width"270px;
+}
+#map_options ol li a {
+	font-weight:bold;
+	text-decoration:none;
+	color:#000;
+}
+#map_options ol li a:hover {
+	color:#FC0;
 }

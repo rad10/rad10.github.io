@@ -1,0 +1,40 @@
+function hide(){
+	$("#map_cologne").slideUp("fast");
+	$("#map_frankfurt").slideUp("fast");
+	$("#map_munich").slideUp("fast");
+	$("#map_berlin").slideUp("fast");
+	$("#map_hamburg").slideUp("fast");
+}
+$(document).ready(function(){
+	hide();
+	
+	$("#germany_header").click(function(){
+		hide();
+		setMap("germany");
+	});
+	$("#cologne_header").click(function(){
+		hide();
+		$("#map_cologne").slideDown("fast");
+		setMap("cologne");
+	});
+	$("#frankfurt_header").click(function(){
+		hide();
+		$("#map_frankfurt").slideDown("fast");
+		setMap("frankfurt");
+	});
+	$("#munich_header").click(function(){
+		hide();
+		$("#map_munich").slideDown("fast");
+		setMap("munich");
+	});
+	$("#berlin_header").click(function(){
+		hide();
+		$("#map_berlin").slideDown("fast");
+		setMap("berlin");
+	});
+	$("#hamburg_header").click(function(){
+		hide();
+		$("#map_hamburg").slideDown("fast");
+		setMap("hamburg");
+	});
+});

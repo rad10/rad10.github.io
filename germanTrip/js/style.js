@@ -1,0 +1,59 @@
+function chide(){
+	$("#csummary").slideUp("fast");
+	$("#cschedule").slideUp("fast");
+	$("#cexpenses").slideUp("fast");
+	$("#clocation").slideUp("fast");
+}
+function echide(){
+	$("#chousing").slideUp("fast");
+	$("#ctransport").slideUp("fast");
+	$("#cfood").slideUp("fast");
+	$("#cevent").slideUp("fast");
+	$("#cmisc").slideUp("fast");
+}
+$(document).ready(function(){
+	//main sliders
+	chide();
+	echide();
+	$("#hsummary").click(function(){
+		chide();
+		echide();
+		$("#csummary").slideDown("fast");
+	});
+	$("#hschedule").click(function(){
+		chide();
+		echide();
+		$("#cschedule").slideDown("fast");
+	});
+	$("#hexpenses").click(function(){
+		chide();
+		echide();
+		$("#cexpenses").slideDown("fast");
+	});
+	$("#hlocation").click(function(){
+		chide();
+		echide();
+		$("#clocation").slideDown("fast");
+	});
+	//expenses tab
+	$("#hhousing").click(function(){
+		echide();
+		$("#chousing").slideDown("fast");
+	});
+	$("#htransport").click(function(){
+		echide();
+		$("#ctransport").slideDown("fast");
+	});
+	$("#hfood").click(function(){
+		echide();
+		$("#cfood").slideDown("fast");
+	});
+	$("#hevent").click(function(){
+		echide();
+		$("#cevent").slideDown("fast");
+	});
+	$("#hmisc").click(function(){
+		echide();
+		$("#cmisc").slideDown("fast");
+	});
+});
