@@ -1,6 +1,6 @@
 var mapTag = document.getElementById("map_map");
 var map = new google.maps.Map(mapTag, {center:{lat: 51.0622412, lng: 4.7905909}, zoom:6, mapTypeId: "terrain"});
-var geocoder = new google.maps.Geocoder();	
+var geocoder = new google.maps.Geocoder();
 function id2coord(placeId){
 	geocoder.geocode( { 'placeId': placeId}, function(results, status) {
 		if (status == google.maps.GeocoderStatus.OK) {
